@@ -13,19 +13,26 @@
 
 
 
-    <table class=“table table­‐bordered table­‐hover”>
-        <tbody>
-            @foreach (var customer in Model)
-            {
-                <tr>
-                    @*<td>@customer.Name</td>*@
-                    <td>@Html.ActionLink(customer.Name, "Details", "Customers", new {id = customer.Id}, null)</td>
+<table class="table table­‐bordered table­‐hover">
+    <thead>
+    <tr>
+        <th>Customer</th>
+        <th>Membership Type</th>
 
+    </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model)
+        {
+            <tr>
+                @*<td>@customer.Name</td>*@
+                <td>@Html.ActionLink(customer.Name, "Details", "Customers", new { id = customer.Id }, null)</td>
+                <td>@customer.MembershipType.Name</td>
 
-                </tr>
+            </tr>
 
-            }
-            
-        </tbody>
+        }
 
-    </table>
+    </tbody>
+
+</table>
