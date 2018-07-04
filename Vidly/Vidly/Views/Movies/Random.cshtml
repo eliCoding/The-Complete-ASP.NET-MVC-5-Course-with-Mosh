@@ -4,27 +4,27 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@{
+@*@{
 
-    var className = Model.Customers.Count > 0 ? "popular" : null;
-}
+    var className = Model.Movies.Count > 0 ? "popular" : null;
+}*@
 
-<h2 class="@className">@Model.Movie.Name</h2>
+<h2>Movie</h2>
 
-@if (Model.Customers.Count == 0)
+@if (Model.Movies.Count == 0)
 {
     <text>
-        no one has rented this moview
+      No Movie 
     </text>
 
 }
 else
 {
     <ul>
-        @foreach (var customer in Model.Customers)
+        @foreach (var movie in Model.Movies)
         {
 
-            <li>@customer.Name</li>
+            <li>@movie.Name</li>
 
         }
     </ul>
