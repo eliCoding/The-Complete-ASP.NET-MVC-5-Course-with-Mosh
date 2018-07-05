@@ -235,6 +235,22 @@
     <Compile Include="Migrations\201807051557343_AddBirthDatetoCustomer.Designer.cs">
       <DependentUpon>201807051557343_AddBirthDatetoCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807051843596_dropTable.cs" />
+    <Compile Include="Migrations\201807051843596_dropTable.Designer.cs">
+      <DependentUpon>201807051843596_dropTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807051846265_AddMovies.cs" />
+    <Compile Include="Migrations\201807051846265_AddMovies.Designer.cs">
+      <DependentUpon>201807051846265_AddMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807051859121_Pendingchanges.cs" />
+    <Compile Include="Migrations\201807051859121_Pendingchanges.Designer.cs">
+      <DependentUpon>201807051859121_Pendingchanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807051901111_Pendingchanges1.cs" />
+    <Compile Include="Migrations\201807051901111_Pendingchanges1.Designer.cs">
+      <DependentUpon>201807051901111_Pendingchanges1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -353,6 +369,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201807051557343_AddBirthDatetoCustomer.resx">
       <DependentUpon>201807051557343_AddBirthDatetoCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807051843596_dropTable.resx">
+      <DependentUpon>201807051843596_dropTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807051846265_AddMovies.resx">
+      <DependentUpon>201807051846265_AddMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807051859121_Pendingchanges.resx">
+      <DependentUpon>201807051859121_Pendingchanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807051901111_Pendingchanges1.resx">
+      <DependentUpon>201807051901111_Pendingchanges1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
