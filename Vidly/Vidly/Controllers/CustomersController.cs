@@ -14,11 +14,13 @@ namespace Vidly.Controllers
 
         private ApplicationDbContext _context;
 
+        //Constructor
         public CustomersController()
         {
             _context = new ApplicationDbContext();
         }
 
+        // _context is disposable object
         protected override void Dispose(bool disposing)
         {
             _context.Dispose();
@@ -58,7 +60,8 @@ namespace Vidly.Controllers
         //    return View(viewModel);
         //}
         public ActionResult Index()
-        {
+        {            
+           // get all customers from DB
             var customers = _context.Customers.Include(c => c.MembershipType).ToList();
             return View(customers);
         }
